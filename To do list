@@ -1,0 +1,16 @@
+Ok so I basically did all of the code for the specific pages.  
+
+These are the things we need to do:
+1. Do Php for the form in the contact page as well as the join form in the join page(I can try doing this)
+2. Create a logo for our company
+3. Change all of the footer tags(I will do this)
+4. There are social media links at the footer tag.  We need to add the social media links.  
+5. Do the credits and FAQ page(I will do this).
+
+These are the things that are completed
+1. Home page except footer
+2. About page
+3. Contact page(just need to make sure the form actually sends stuff)
+4. Join us page
+5. What we do page.
+6. Media queries for all pages are working so we should be good there
