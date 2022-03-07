@@ -626,11 +626,11 @@ h6 {
 ***************/
 
 .btn-primary {
-    background-color: red;
+    background-color: green;
     border: 0;
     cursor: pointer;
 }
 
 .btn-primary:hover {
-    background-color: #cc0000;
+    background-color: #013220;
 }
