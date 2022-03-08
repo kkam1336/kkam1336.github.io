@@ -5,7 +5,7 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 
-$email_from = 'compostingutah@gmail.com';
+$email_from = 'kkam1336.github.io/home.html';
 
 $email_subject = 'New form submission';
 

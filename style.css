@@ -30,7 +30,7 @@ h6 {
 	Parallax
 ****************/
 .parallax {
-    background-image: url("images/background.jpg");
+    background-image: url("images/wasatch.jpg");
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -198,6 +198,11 @@ h6 {
     -ms-transform: translateY(-60%);
     transform: translateY(-60%);
 }
+.mainImageElement h2 {
+  font-size: 100px;
+  color: white;
+}
+
 
 .mainImageElement a {
     display: inline-block;
