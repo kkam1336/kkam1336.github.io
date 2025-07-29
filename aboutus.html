@@ -21,8 +21,28 @@
     <link rel="stylesheet" href="aboutus.css">
     <script src="home.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="images/logo.jpg">
+    <link rel="icon" href="images/favicon.png">
+    
+    <script type="application/ld+json">
+        [{
+          "@context": "https://schema.org/",
+          "@type": "ImageObject",
+          "contentUrl": "http://compostutah.ml/images/aboutbackground.jpg",
+          "creator": {
+            "@type": "Person",
+            "name": "Mitch Tobin"
+          }
+        },
+        {
+            "@context": "https://schema.org/",
+            "@type": "ImageObject",
+            "contentUrl": "http://compostutah.ml/images/aboutpic.jpg",
+            "creator": {
+              "@type": "Company",
+              "name": "Getty Images"
+            }
+        }]
+    </script>
 </head>
 
 
@@ -31,17 +51,17 @@
     <div class="parallax"></div>
 
     <nav class="navbar navbar-custom">
-        <a class="navbar-brand" href="home.html">
-            <img id="hamburgerImage" alt="company logo" src="images/logo.jpg"/>
-            &nbsp;<span style="color: white; font-weight: 700px;">Compost Utah</span>
+        <a class="navbar-brand" href="index.html">
+            <img id="hamburgerImage" alt="company logo" src="images/complogo.png"/>
+            &nbsp;<span style="color: white; font-weight: 700px;"></span>
         </a>
-        <i id="hamburgerButton" class="material-icons" style="color: brown;">menu</i>
+        <i id="hamburgerButton" class="material-icons" style="color: #263e0e;">menu</i>
     </nav>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="home.html">
-            <img style="margin-left: 12%;" alt="Brand" src="images/headerpic.jpg"><span>
-                <a style="color: black; z-index: 1; font-weight: 600; font-size: 15px;">&nbsp;&nbsp;Compost Utah</span>
+        <a class="navbar-brand" href="index.html">
+            <img style="margin-left: 12%;" alt="Brand" src="images/complogo.png"><span>
+                <a style="color: black; z-index: 1; font-weight: 600; font-size: 15px;">&nbsp;&nbsp;</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +70,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">
+                    <a class="nav-link" href="index.html">
                         <i class="material-icons">
                             home
                         </i>
@@ -123,12 +143,12 @@
             <br />
             <br />
             <div id="sliderCompany">
-                <a href="home.html"><img style="z-index: 1;" id="slideoutImage" src="images/logo.jpg"
+                <a href="index.html"><img style="z-index: 1;" id="slideoutImage" src="images/complogoslideout.png"
                         alt="company image" /></a>
-                &nbsp;Compost Utah
+                &nbsp;
             </div>
             <br />
-            <button class="slideout-button" onclick="location.href='home.html'" type="button">
+            <button class="slideout-button" onclick="location.href='index.html'" type="button">
                 <i class="material-icons">
                     home
                 </i>Home
@@ -228,29 +248,30 @@
     </div>
   </section>
 
+
   <footer class="large-footer">
       <div style="text-align: center;" class="footerPart">
-          <a href="home.html"><img src="images/companyimage.jpg" alt="company image" /></a>
-          &nbsp;&nbsp;&nbsp;<span>COMPOST UTAH</span>
+          <a href="index.html"><img src="images/allwhitelogo.png" alt="company image" /></a>
+          &nbsp;&nbsp;&nbsp;<span></span>
           <br />
           <br />
           <br />
           <br />
           <br />
       </div>
-      <div style="text-align: right;" class="footerPart" id="learnMoreholder">
+      <div style="text-align: left;" class="footerPart" id="learnMoreholder">
           <h5 style="font-size: 20px">Visit Us</h5>
           <br />
           <a href="https://www.facebook.com/profile.php?id=100078910487913">Facebook</a> <br />
           <a href="https://twitter.com/CompostUtah">Twitter</a> <br />
-          <a href="https://www.instagram.com/compost_utah/">Instagram</a>
+          <a href="https://www.instagram.com/compostutah/">Instagram</a>
           <br />
           <br />
           <br />
           <br />
       </div>
 
-      <div style="text-align: center;"class="footerPart" id="learnMoreHolder">
+      <div style="text-align: left;"class="footerPart" id="learnMoreHolder">
           <br />
           <h5 style="font-size: 20px">Contact Us</h5>
           <br />
@@ -282,27 +303,32 @@
   <footer class="small-footer">
       <br />
       <div class="footer-part-small">
-          <img src="images/companyimage.jpg" alt="company image" />
-          &nbsp;&nbsp;&nbsp;<span>COMPOST UTAH</span>
+          <img src="images/allwhitelogo.png" alt="company image" />
+          &nbsp;&nbsp;&nbsp;<span style = "color: white";>COMPOST UTAH</span>
       </div>
       <div class="footer-part-small">
-          <h5>Visit Us</h5>
-          <a href="https://www.facebook.com/profile.php?id=100078910487913">Facebook</a>&nbsp;&nbsp;
-          <a href="https://twitter.com/CompostUtah">Twitter</a>&nbsp;&nbsp;
-          <a href="https://www.instagram.com/compost_utah/">Instagram</a>
+          <h5 style = "color: white;">Visit Us</h5>
+          <a href="https://www.facebook.com/profile.php?id=100078910487913" style="color: white">Facebook</a>&nbsp;&nbsp;
+          <a href="https://twitter.com/CompostUtah" style="color: white">Twitter</a>&nbsp;&nbsp;
+          <a href="https://www.instagram.com/compostutah/" style= "color: white">Instagram</a>
       </div>
 
       <div class="footer-part-small" id="learnMoreHolder">
-          <h5>Learn More</h5>
-          <a href="contact.html">Contact Us</a>&nbsp;&nbsp;
-          <a href="privacy.html">Privacy Policy</a>&nbsp;&nbsp;
-          <a href="join.html">Join Us</a>&nbsp;&nbsp;
-          <a href="aboutus.html">About Compost Utah</a>&nbsp;&nbsp;
-          <a href="faq.html">FAQs</a>&nbsp;&nbsp;
-          <a href="credits.html">Credits</a>
+          <h5 style="color: white;">Learn More</h5>
+          <a href="contact.html" style="color: white">Contact Us</a>&nbsp;&nbsp;
+          <a href="privacy.html" style="color: white">Privacy Policy</a>&nbsp;&nbsp;
+          <a href="join.html" style="color: white">Join Us</a>&nbsp;&nbsp;
+          <a href="aboutus.html" style="color: white">About Compost Utah</a>&nbsp;&nbsp;
+          <a href="fa1.html" style="color: white">FAQs</a>&nbsp;&nbsp;
+          <a href="credits.html" style="color: white">Credits</a>
       </div>
   </footer>
 
+  <footer class="copyright-footer">
+    <div style="text-align: center">
+        <p style = "color: white;">                Compost Utah. © 2023</p>
+    </div>
+</footer>
 
     <script>
         $(".navbar-expand-lg").hide();

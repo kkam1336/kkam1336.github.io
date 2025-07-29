@@ -18,22 +18,66 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="style.css">
     <script src="home.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="images/favicon.png">
-
+    <link rel="icon" href="images/favicon.png" sizes="120x120">
     <script type="application/ld+json">
-        {
+        [{
           "@context": "https://schema.org/",
           "@type": "ImageObject",
-          "contentUrl": "http://compostutah.ml/images/faqbackground.jpg",
+          "contentUrl": "http://compostutah.ml/images/wasatch2.jpg",
           "creator": {
-            "@type": "Comapny",
-            "name": "The Dirt on Dirt"
+            "@type": "Person",
+            "name": "Jude Tibway"
           }
-        }
+        },
+        {
+            "@context": "https://schema.org/",
+            "@type": "ImageObject",
+            "contentUrl": "http://compostutah.ml/images/whycare.jpg",
+            "creator": {
+              "@type": "Company",
+              "name": "Compost Utah"
+            }
+        },
+          {
+          "@context": "https://schema.org/",
+          "@type": "ImageObject",
+          "contentUrl": "http://compostutah.ml/images/whycompost.jpg",
+          "creator": {
+            "@type": "Company",
+            "name": "Compost Utah"
+          }
+        },
+          {
+          "@context": "https://schema.org/",
+          "@type": "ImageObject",
+          "contentUrl": "http://compostutah.ml/images/allwhitelogo.png",
+          "creator": {
+            "@type": "Company",
+            "name": "Compost Utah"
+          }
+        },
+        {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "http://compostutah.ml/images/complogo.png",
+        "creator": {
+          "@type": "Company",
+          "name": "Compost Utah"
+           }
+        },
+        {
+            "@context": "https://schema.org/",
+            "@type": "ImageObject",
+            "contentUrl": "http://compostutah.ml/images/complogoslideout.png",
+            "creator": {
+              "@type": "Company",
+              "name": "Compost Utah"
+               }
+        }]
     </script>
 </head>
 
@@ -44,10 +88,10 @@
 
     <nav class="navbar navbar-custom">
         <a class="navbar-brand" href="index.html">
-            <img id="hamburgerImage" alt="company logo" src="images/allwhitelogo.png"/>
+            <img id="hamburgerImage" alt="company logo" src="images/complogo.png"/>
             &nbsp;<span style="color: white; font-weight: 700px;"></span>
         </a>
-        <i id="hamburgerButton" class="material-icons">menu</i>
+        <i id="hamburgerButton" class="material-icons" style="color: #263e0e">menu</i>
     </nav>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -61,8 +105,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                <li class="nav-item active">
+                    <a style="color: #595959; font-weight: bold;" class="nav-link" href="index.html">
                         <i class="material-icons">
                             home
                         </i>
@@ -73,7 +117,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="whatwedo.html">
                         <i class="material-icons material-airplane">
-                            airplanemode_active
+                            class
                         </i>
                         What We Do
                     </a>
@@ -81,7 +125,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="join.html">
                         <i class="material-icons">
-                            work
+                            schedule
                         </i>
                         Join Us
                     </a>
@@ -94,6 +138,7 @@
                         About Us
                     </a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="faq.html">
                         <i class="material-icons">
@@ -135,7 +180,7 @@
             <br />
             <br />
             <div id="sliderCompany">
-                <a href="index.html"><img style="z-index: 1;" id="slideoutImage" src="images/complogoslideout.png"
+                <a href="index.html"><img style="z-index: 1; color: #263e0e;" id="slideoutImage" src="images/complogoslideout.png"
                         alt="company image" /></a>
                 &nbsp;Compost Utah
             </div>
@@ -191,86 +236,41 @@
     </div>
 
     <div class="mainImageElement">
-        <h1 class="animated fadeInDown" id="mainImageText" style="animation-delay: 1.1s; font-family: 'Abel', sans-serif;">FREQUENTLY ASKED QUESTIONS</h1><br /><br />
+        <h2 class="animated fadeInDown" id="mainImageText" style="animation-delay: 1.1s; font-family: 'Abel', sans-serif;
+        ">TOO GOOD TO WASTE. </h2><br /><br />
+        <a style="margin-right: 1.5%;" href="aboutus.html" class="btn btn-primary">ABOUT US</a>
+        <a style="margin-left: 1.5%;" href="contactus.html" class="btn btn-primary">START A PROGRAM</a>
     </div>
 
-    <!--
-    <div id="bookingInfoWrapper">
-        <img style="vertical-align: top;" alt="red rocks" src="/images/home/red-rocks.jpeg" />
-        <div id="bookingInfoText">
-            <br />
-            <br />
-            <br />
-            <h3 class="bookingInfoTextElement" style="font-weight: 700;">START YOUR JOURNEY
-            </h3>
-            <p class="bookingInfoTextElement">
-                Red Rock Airlines is your
-                gateway to explore the western United States. We provide cheap, fast, and convenient transportation so
-                you can get where you want to go.
-            </p>
-            <a href="/book/book.php" class="btn btn-primary">Book Now</a>
-            <br /><br />
-            <p class="bookingInfoTextElement">
-                Looking to plan your next adventure? Check our schedule to find times, locations and dates for all of our flights.
-            </p>
-            <a href="/schedules/schedules.php" class="btn btn-primary">Schedules</a>
-            <br />
+
+    <div id="wrapperCards">
+        <div class="card">
+            
+            <img src="images/whycompost.jpg" class="
+            -img-top" alt="plane passenger">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Abel' sans-serif; font-size: 25px;">WHY COMPOST?</h5>
+                <hr />
+                <p class="card-text">Composting is an inexpensive, natural process that transforms your kitchen and garden waste into a valuable and nutrient rich food for your garden. It's easy, fun, and enjoyable to make and use.</p>
+                <a href="whatwedo.html" class="btn btn-primary">What We Do?</a>
+            </div>
         </div>
-        <br />
+        <div class="card">
+            <img src="images/whycare.jpg" class="card-img-top" alt="sunset from airplane">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: 25px;">WHY CARE?
+                </h5>
+                <hr />
+                <p class="card-text">Composting enriches the soil by retaining moisture and suppressing plant diseases and pests.  Composting reduces the need for chemical fertilizers and encourages the production of beneficial bacteria.</p>
+                <a href="join.html" class="btn btn-primary">Join us</a>
+            </div>
+        </div>
     </div>
-    -->
+
     <div id = "wrapperImage">
 
     </div>
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="faq-wrapper">
-            <div class="header">
-              <br /><br />
-              <h1>FAQs</h1>
-            </div>
-            <div class="faq-inner">
-              <div class="faq-item">
-                <h3>Do I have to commit every single time if I join your group?<span class="faq-plus">&plus;</span></h3>
-                <div class="faq-body">
-                  No, you can quit anytime if you want.  If you can't make it to a certain event, that is completely fine.
-                </div>
-              </div>
-              <hr>
-              <div class="faq-item">
-                <h3>Can I quit after I join your group? <span class="faq-plus">&plus;</span></h3>
-                <div class="faq-body">
-                  Absolutely.  You can quit anytime if you don't feel like being in the group anymore.
-                </div>
-              </div>
-              <hr>
-              <div class="faq-item">
-                <h3>How will I know when events are? <span class="faq-plus">&plus;</span></h3>
-                <div class="faq-body">
-                  If you fill out the form in the join page, you will automatically get notifications for events.
-                </div>
-              </div>
-              <hr>
-              <div class="faq-item">
-                <h3>What if I'm not experienced.  Can I still join? <span class="faq-plus">&plus;</span></h3>
-                <div class="faq-body">
-                  Yes, in fact we would love to get some new people into composting.  There will be plenty of people to help you out.
-                </div>
-              </div>
-              <hr>
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-      <br /><br /><br />
-    </section>
 
     <footer class="large-footer">
         <div style="text-align: center;" class="footerPart">
@@ -285,9 +285,9 @@
         <div style="text-align: left;" class="footerPart" id="learnMoreholder">
             <h5 style="font-size: 20px">Visit Us</h5>
             <br />
-            <a href="https://www.facebook.com/profile.php?id=100078910487913">Facebook</a> <br />
-            <a href="https://twitter.com/CompostUtah">Twitter</a> <br />
-            <a href="https://www.instagram.com/compostutah/">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100078910487913" target="_blank">Facebook</a> <br />
+            <a href="https://twitter.com/CompostUtah" target="_blank">Twitter</a> <br />
+            <a href="https://www.instagram.com/compostutah/" target="_blank">Instagram</a>
             <br />
             <br />
             <br />
@@ -347,22 +347,16 @@
         </div>
     </footer>
 
-    
+   
     <footer class="copyright-footer">
         <div style="text-align: center">
             <p style = "color: white;">                Compost Utah. © 2023</p>
         </div>
     </footer>
-    
+
     <script>
         $(".navbar-expand-lg").hide();
         $("#slideoutButtons").hide();
-    </script>
-
-    <script type="text/javascript">
-      $(".faq-plus").on('click',function(){
-        $(this).parent().parent().find('.faq-body').slideToggle();
-      });
     </script>
 
 </body>

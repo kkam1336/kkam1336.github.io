@@ -30,13 +30,14 @@ h6 {
 	Parallax
 ****************/
 .parallax {
-    background-image: url("images/wasatch.jpg");
+    background-image: url("images/wasatch2.jpg");
     height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 /****************
 	Parallax End
@@ -46,6 +47,7 @@ h6 {
 	Navbar
 **************/
 /*desktops*/
+
 @media (min-width: 993px) {
     .navbar-custom {
         z-index: 2;
@@ -53,6 +55,7 @@ h6 {
         position: absolute;
         top: 3%;
         width: 100%;
+        /* align-items: flex-start; */
     }
 
     #hamburgerImage {
@@ -62,7 +65,7 @@ h6 {
 }
 
 /*phones*/
-@media (max-width: 992px) {
+@media (max-width: 600px) {
     .navbar-custom {
         z-index: 2;
         background-color: rgba(212, 212, 212, 0) !important;
@@ -82,10 +85,36 @@ h6 {
     }
 
     #hamburgerImage {
-        width: 40px;
-        height: 25px;
+
+        width: 100px;
+        height: 100px;
     }
 }
+@media(min-width: 800px) {
+  .navbar-custom {
+      z-index: 2;
+      background-color: rgba(212, 212, 212, 0) !important;
+      position: absolute;
+      top: -9%;
+      width: 98%;
+  }
+
+  .navbar-custom span {
+      color: white;
+      z-index: 1;
+      font-size: 25px;
+  }
+
+  #hamburgerMainItems {
+      display: none;
+  }
+/*LOGO MAIN*/
+  #hamburgerImage {
+      width: 300px;
+      height: 300px;
+  }
+}
+
 
 /* navbar when scrolling */
 @media (min-width: 992px) {
@@ -103,6 +132,7 @@ h6 {
         position: fixed;
         top: 0;
         width: 100%;
+        height: 125px;
         z-index: 3;
         -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
@@ -121,7 +151,10 @@ h6 {
         padding-left: 25px;
     }
 }
-
+.navbar-expand-lg a img {
+    width: 200px;
+    height: 200px;
+}
 @media (max-width: 991px) {
     .navbar-expand-lg a img {
         width: 55px;
@@ -129,11 +162,11 @@ h6 {
     }
 
 
-
     .navbar-expand-lg {
         position: fixed;
         top: 0;
         width: 100%;
+        height: 125px;
         z-index: 3;
         -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
@@ -157,7 +190,7 @@ h6 {
 
     .home-icon {
         padding-left: 0;
-    }
+    } 
 }
 
 
@@ -169,7 +202,7 @@ h6 {
 	Hamburger
 ******************/
 #hamburgerButton {
-    position: relative;
+    position: absolute;
     right: 4%;
     cursor: pointer;
     color: white;
@@ -227,6 +260,18 @@ h6 {
         border-radius: 10%;
         font-size: 1.65vw;
     }
+
+}
+@media(max-width: 500px) {
+  .mainImageElement h2 {
+    font-size: 50px;
+  }
+}
+
+@media(min-width: 800px) {
+  .mainImageElement h2 {
+    font-size: 75px;
+  }
 }
 
 .mainImageElement h1 {
@@ -244,7 +289,7 @@ h6 {
 ******************/
 #slideout {
     height: 100%;
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     position: absolute;
     top: 0;
     right: 0;
@@ -252,7 +297,7 @@ h6 {
 }
 
 .close {
-    float: left;
+    float: right;
 }
 
 .material-airplane {
@@ -264,14 +309,16 @@ h6 {
 }
 
 .slideout-button {
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     border: 0;
-    color: #4d4d4d;
+    color: #263e0e;
+
 }
 
 @media (min-height: 501px) {
     .slideout-button {
-        padding: 5%;
+        padding: 25px;
+
     }
 
     .dropdown-menu-slideout {
@@ -282,11 +329,11 @@ h6 {
     .dropdown-menu-slideout {
         width: 170px;
         height: 100px;
-        background-color: #f2f2f2;
+        background-color: #ffffff;
     }
 }
 
-/* set up so if the more button goes off of initial screen the button will be brought back
+/* set up so if the button goes off of initial screen the button will be brought back
  on and sets the more button width and height for smaller screens */
 @media (max-height: 500px) {
     .slideout-button {
@@ -319,15 +366,17 @@ h6 {
 }
 
 #slideout img {
-    width: 20%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
 }
 
 #sliderCompany {
     font-weight: 600;
-    color: #4d4d4d;
+    color: #FFFFFF;
     text-align: center;
 }
+
+
 
 /******************
 	Slideout End
@@ -336,82 +385,31 @@ h6 {
 /****************
 	Infos
 *****************/
-@media (min-width: 1186px) {
-    #bookingInfoWrapper {
-        position: relative;
-        width: 100%;
-        text-align: center;
-    }
-
-    #bookingInfoWrapper img,
-    #bookingInfoText {
-        display: inline-block;
-        width: 40%;
-        margin-top: 7%;
-        margin-bottom: 3%;
-    }
-
-    .bookingInfoTextElement {
-        padding-left: 5%;
-        font-size: 1.1vw;
-    }
-
-    #bookingInfoText {
-        text-align: left;
-    }
-
-    #bookingInfoText a {
-        margin-left: 7.5%;
-    }
-}
-
-@media (max-width: 1186px) {
-    #bookingInfoWrapper {
-        position: relative;
-        width: 100%;
-        text-align: center;
-    }
-
-    .bookingInfoTextElement {
-        padding: 0 17.5% 0 17.5%;
-        padding-left: 5%;
-    }
-
-    #bookingInfoText {
-        text-align: left;
-        padding-left: 5%;
-        font-size: 2vw;
-    }
-
-    #bookingInfoText a {
-        margin-left: 5%;
-    }
-
-    #bookingInfoText h3 {
-        padding-top: 5%;
-    }
-
-    #bookingInfoWrapper img {
-        padding-top: 10%;
-        width: 85%;
-    }
-}
 
 
 #wrapperCards {
     width: 100%;
     text-align: center;
+    height: 100%;
+}
+@media (max-width: 600px){
+    #wrapperCards {
+        width: 100%;
+        text-align: center;
+        height: 200%;
+    }
 }
 
 .card {
     display: inline-block;
     width: 30%;
     margin-top: 7%;
-    margin-bottom: 8%;
+    margin-bottom: 10%;
     -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     font-size: 1.1vw;
+    
 }
 .card img {
   height: 100%;
@@ -423,7 +421,12 @@ h6 {
 }
 
 .card p {
-    text-align: left;
+    text-align: center;
+}
+@media (max-width: 1400px) {
+    #wrapperCards {
+        height: 135%;
+    }
 }
 @media (max-width: 1150px) {
     .card {
@@ -432,7 +435,7 @@ h6 {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     .card {
         width: 75%;
         font-size: 3.6vw;
@@ -447,6 +450,12 @@ h6 {
         font-size: 3.5vw;
     }
 }
+
+/* @media (max-width: 600px){
+    .card-body{
+        padding: 1.25rem;
+    }
+} */
 
 .card h1 {
     font-size: 1.1vw;
@@ -524,25 +533,37 @@ h6 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    vertical-align: top;
     width: 100%;
     height: 350px;
-    background-color: #f2f2f2;
+    background-color: #263e0e;
     font-size: 15px;
 }
 
 .small-footer {
-    background-color: #f2f2f2;
+    background-color: #263e0e;
+}
+
+.copyright-footer{
+    padding-left: 3%;
+    padding-top: -10%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #263e0e;
+    font-size: 15px;
 }
 
 .footerPart a {
-    color: #1c1c1c;
-    padding-top: 20px;
+    color: #FFFFFF;
+    padding-top: 0;
 }
 .footerPart a img {
-  padding-top: 30px;
-  height: 200px;
-  width: 250px;
+ 
+  height: 300px;
+  width: 300px;
 }
 
 @media (max-width: 1000px) and (min-width: 600px) {
@@ -597,7 +618,7 @@ h6 {
 }
 
 .footerPart span {
-    color: #bfbfbf;
+    color: white;
     font-weight: bolder;
 }
 
@@ -618,24 +639,31 @@ h6 {
 }
 
 .footer-part-small a {
-    color: #bfbfbf;
+    color: #263e0e;
+}
+@media(max-width 1500px) {
+  .footer-part-small h5 {
+    color: white;
+  }
 }
 
 .footerPart h5 {
     font-size: 15px;
-    color: #1c1c1c;
+    color: #FFFFFF;
 }
 
 /**************
 	Footer End
 ***************/
 
+
+
 .btn-primary {
-    background-color: green;
+    background-color: #263e0e;
     border: 0;
     cursor: pointer;
 }
 
 .btn-primary:hover {
-    background-color: #013220;
+    background-color: #748e40;
 }
